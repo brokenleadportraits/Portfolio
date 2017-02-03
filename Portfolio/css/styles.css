@@ -1,0 +1,288 @@
+body {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+
+
+/* For mobile phones: */
+[class*="col-"] {
+	float: left;
+  width: 100%;
+}
+@media only screen and (min-width: 600px) {
+    /* For tablets: */
+    .col-m-1 {width: 8.33%;}
+    .col-m-2 {width: 16.66%;}
+    .col-m-3 {width: 25%;}
+    .col-m-4 {width: 33.33%;}
+    .col-m-5 {width: 41.66%;}
+    .col-m-6 {width: 50%;}
+    .col-m-7 {width: 58.33%;}
+    .col-m-8 {width: 66.66%;}
+    .col-m-9 {width: 75%;}
+    .col-m-10 {width: 83.33%;}
+    .col-m-11 {width: 91.66%;}
+    .col-m-12 {width: 100%;}
+}
+@media only screen and (min-width: 1130px) {
+    /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+}
+
+
+nav {
+	background-color: #668cff;
+	padding: 5px;
+}
+
+nav a {
+	text-decoration: none;
+}
+
+nav li {
+	list-style: none;
+	display: inline-block;
+	margin: 2px;
+	padding: 4px;
+
+}
+
+
+.page-body {
+	font-family: 'Fjalla One', sans-serif;
+	margin: 75px 160px;
+}
+@media only screen and (max-width: 667px) {
+	.page-body {
+		margin: 30px;
+	}
+}
+
+.site-buttons {
+	padding: 10px;
+	margin: 20px 0px;
+}
+
+footer {
+	display: block;
+	background-color: #668cff;
+	padding: 6px;
+}
+
+
+/*****************INDEX PAGE STYLES*****************/
+
+	/****TOP HEADER STYLES****/
+
+#header{
+	background-image: url("images/index-background.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	height: auto;
+	padding: 50px;
+}
+
+#header h1 {
+	text-align: center;
+	color: white;
+}
+#header h3 {
+	text-align: center;
+	color: white;
+}
+
+
+/****ABOUT SECTION STYLES****/
+
+#about-body {
+}
+
+#about-head {
+	padding-right: 30px;
+}
+@media only screen and (width: 375px) {
+	#about-head {
+		padding: 0px;
+	}
+}
+
+#about-image {
+	padding-left: 40px;
+	text-align: center;
+}
+@media only screen and (width: 375px) {
+	#about-image {
+		padding: 0px;
+	}
+}
+
+#about-image img {
+	margin-top: 15px;
+	width: 100%;
+	height: auto;
+	border-radius: 50%;
+}
+
+#more-links  {
+	text-align: center;
+}
+
+.fa {
+	font-size:36px;
+	color: #668cff;
+}
+.fa:hover {
+	color: black;
+}
+
+
+/****PROJECT SECTION STYLES****/
+
+#project-body {
+}
+
+#project-images img{
+	padding: 10px;
+	width: 100%;
+  height: auto;
+}
+
+#project-images img:hover {
+	opacity: .5;
+	transition: .3s ease-in-out;
+	-webkit-transition: .3s ease-in-out;
+}
+
+#project-images:hover .show-text {
+	visibility: visible;
+}
+
+.show-text {
+	visibility: hidden;
+	text-align: center;
+	margin: 8px;
+}
+@media only screen and (max-width: 667px) {
+	.show-text {
+		visibility: visible;
+	}
+}
+
+
+
+
+/****************ALL PROJECT PAGE STYLES****************/
+
+
+
+
+
+#logo-image img  {
+	margin: 0 auto;
+}
+
+
+#main-page-img img {
+	width: 100%;
+	height: auto;
+	border-style: solid;
+	border-color: black;
+	border-width: 20px;
+}
+
+
+#main-side-info p {
+	margin: 30px;
+}
+@media only screen and (max-width: 667px){
+	#main-side-info p {
+		margin: 20px 0px;
+	}
+}
+
+
+#beergoblin-header {
+	background-image: url("images/beerlogo10.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	width: 100%;
+	height: auto;
+	padding: 50px;
+}
+#beergoblin-header h1 {
+	text-align: center;
+	color: black;
+} 
+
+
+#yoga-header {
+	background-image: url("images/gallery2.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	width: 100%;
+	height: auto;
+	padding: 50px;
+}
+#yoga-header h1 {
+	text-align: center;
+	color: black;
+}
+
+
+#wubbaduckies-header {
+	background-image: url("images/rubber3.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	width: 100%;
+	height: auto;
+	padding: 50px;
+}
+#wubbaduckies-header h1 {
+	text-align: center;
+	color: black;
+}
+
+
+#contact-header {
+	background-image: url("images/portfolio-image.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	width: 100%;
+	height: auto;
+	padding: 50px;
+}
+#contact-header h1 {
+	text-align: center;
+	color: black;
+}

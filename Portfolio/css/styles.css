@@ -4,6 +4,15 @@ body {
 	padding: 0;
 }
 
+p {
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size: 1.2em;
+}
+
+h1 {
+	font-family: 'Fjalla One', sans-serif;
+}
+
 
 * {
   box-sizing: border-box;
@@ -56,14 +65,19 @@ body {
     .col-12 {width: 100%;}
 }
 
-
+/******************NAV STYLES****************/
 nav {
+	position: fixed;
+	width: 100%;
+	top: 0px;
 	background-color: #668cff;
-	padding: 5px;
+	padding: 4px;
 }
 
 nav a {
 	text-decoration: none;
+	color: white;
+	font-family: 'Fjalla One', sans-serif;
 }
 
 nav li {
@@ -71,12 +85,26 @@ nav li {
 	display: inline-block;
 	margin: 2px;
 	padding: 4px;
-
+}
+@media only screen and (max-width: 667px) {
+	nav ul {
+		padding: 8px;
+		margin: 8px;
+	}
 }
 
+.nav-name {
+	visibility: hidden;
+	float: right;
+}
+@media only screen and (max-width: 667px) {
+	.nav-name {
+		visibility: visible;
+	}
+}
 
+/********************ALL PAGE BODY STYLES*****************/
 .page-body {
-	font-family: 'Fjalla One', sans-serif;
 	margin: 75px 160px;
 }
 @media only screen and (max-width: 667px) {
@@ -86,43 +114,158 @@ nav li {
 }
 
 .site-buttons {
-	padding: 10px;
-	margin: 20px 0px;
+	background-color: #668cff;
+	width:127px;
+  height:38px;
+  margin: 20px 0px 20px;
+  cursor:pointer;
+}
+.site-buttons:hover {
+	background-color: green;
+}
+
+.site-buttons a{
+	text-decoration: none;
+	font-family: 'Fjalla One', sans-serif;
+	color: white;
 }
 
 footer {
 	display: block;
 	background-color: #668cff;
-	padding: 6px;
+	padding: 4px;
+	color: white;
 }
 
 
-/*****************INDEX PAGE STYLES*****************/
 
-	/****TOP HEADER STYLES****/
+/****TOP HEADER STYLES****/
 
 #header{
 	background-image: url("images/index-background.jpg");
 	background-repeat: no-repeat;
 	background-position: center;
+	width: 100%;
 	height: auto;
 	padding: 50px;
-}
-
-#header h1 {
+	margin-top: 70px;
 	text-align: center;
+	font-size: 1.5em;
 	color: white;
 }
-#header h3 {
-	text-align: center;
-	color: white;
+@media only screen and (max-width: 667px) {
+	#header {
+		font-size: 1em;
+	}
 }
 
+
+#beergoblin-header {
+	background-image: url("images/beerlogo10.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	width: 100%;
+	height: auto;
+	padding: 50px;
+	margin-top: 70px;
+	text-align: center;
+	font-size: 1.5em;
+	color: white;
+	text-shadow: 4px 6px 0 black;
+}
+@media only screen and (max-width: 667px) {
+	#beergoblin-header {
+		font-size: 1.5em;
+	}
+}
+
+
+#yoga-header {
+	background-image: url("images/gallery2.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	width: 100%;
+	height: auto;
+	padding: 50px;
+	margin-top: 70px;
+	text-align: center;
+	font-size: 1.5em;
+	color: white;
+	text-shadow: 4px 6px 0 black;
+}
+@media only screen and (max-width: 667px) {
+	#yoga-header {
+		font-size: 1.5em;
+	}
+}
+
+
+#wubbaduckies-header {
+	background-image: url("images/rubber3.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	width: 100%;
+	height: auto;
+	padding: 50px;
+	margin-top: 70px;
+	text-align: center;
+	font-size: 1.5em;
+	color: white;
+	text-shadow: 4px 6px 0 black;
+}
+@media only screen and (max-width: 667px) {
+	#wubbaduckies-header {
+		font-size: 1.5em;
+	}
+}
+
+
+#contact-header {
+	background-image: url("images/nyc2.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	width: 100%;
+	height: auto;
+	padding: 50px;
+	margin-top: 70px;
+	text-align: center;
+	font-size: 1.5em;
+	color: white;
+	text-shadow: 4px 6px 0 black;
+}
+@media only screen and (max-width: 667px) {
+	#contact-header {
+		font-size: 1.5em;
+	}
+}
+
+#blp-header {
+	background-image: url("images/pencils1.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	width: 100%;
+	height: auto;
+	padding: 50px;
+	margin-top: 70px;
+	text-align: center;
+	font-size: 1.5em;
+	color: white;
+	text-shadow: 4px 6px 0 black;
+}
+@media only screen and (max-width: 667px) {
+	#blp-header {
+		font-size: 1.5em;
+	}
+}
 
 /****ABOUT SECTION STYLES****/
 
-#about-body {
-}
+
 
 #about-head {
 	padding-right: 30px;
@@ -165,8 +308,6 @@ footer {
 
 /****PROJECT SECTION STYLES****/
 
-#project-body {
-}
 
 #project-images img{
 	padding: 10px;
@@ -200,10 +341,6 @@ footer {
 
 /****************ALL PROJECT PAGE STYLES****************/
 
-
-
-
-
 #logo-image img  {
 	margin: 0 auto;
 }
@@ -219,7 +356,7 @@ footer {
 
 
 #main-side-info p {
-	margin: 30px;
+	margin: 0px 30px;
 }
 @media only screen and (max-width: 667px){
 	#main-side-info p {
@@ -228,61 +365,55 @@ footer {
 }
 
 
-#beergoblin-header {
-	background-image: url("images/beerlogo10.jpg");
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: cover;
+
+/******************CONTACT PAGE STYLES*********************/
+
+#contact-map {
+	padding-left: 60px;
+}
+@media only screen and (max-width: 1130px) {
+	#contact-map {
+		padding-left: 2px;
+	}
+}
+
+#contact-map iframe {
 	width: 100%;
 	height: auto;
-	padding: 50px;
+  border-radius: 20%; 
 }
-#beergoblin-header h1 {
-	text-align: center;
-	color: black;
-} 
 
+#contact-details {
+	padding-left: 60px;
+}
+@media only screen and (max-width: 1130px) {
+	#contact-details {
+		padding-left: 2px;
+	}
+}
 
-#yoga-header {
-	background-image: url("images/gallery2.jpg");
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: cover;
+/****FORM****/
+label {
+    display:block;
+    margin-top:20px;
+}
+
+input, textarea {
 	width: 100%;
 	height: auto;
-	padding: 50px;
-}
-#yoga-header h1 {
-	text-align: center;
-	color: black;
-}
-
-
-#wubbaduckies-header {
-	background-image: url("images/rubber3.jpg");
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: cover;
-	width: 100%;
-	height: auto;
-	padding: 50px;
-}
-#wubbaduckies-header h1 {
-	text-align: center;
-	color: black;
+	background:#efefef;
+	border:1px solid #dedede;
+	padding:10px;
+	margin-top:3px;
 }
 
+#submit {
+    width:127px;
+    height:38px;
+    margin-top:20px;
+    cursor:pointer;
+}
 
-#contact-header {
-	background-image: url("images/portfolio-image.jpg");
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: cover;
-	width: 100%;
-	height: auto;
-	padding: 50px;
-}
-#contact-header h1 {
-	text-align: center;
-	color: black;
-}
+	#submit:hover {
+	    background-color: green;
+	}

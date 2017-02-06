@@ -4,68 +4,6 @@ body {
 	padding: 0;
 }
 
-p {
-	font-family: 'Open Sans Condensed', sans-serif;
-	font-size: 1.2em;
-}
-
-h1 {
-	font-family: 'Fjalla One', sans-serif;
-}
-
-
-* {
-  box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -ms-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
-.row::after {
-    content: "";
-    clear: both;
-    display: table;
-}
-
-
-
-/* For mobile phones: */
-[class*="col-"] {
-	float: left;
-  width: 100%;
-}
-@media only screen and (min-width: 600px) {
-    /* For tablets: */
-    .col-m-1 {width: 8.33%;}
-    .col-m-2 {width: 16.66%;}
-    .col-m-3 {width: 25%;}
-    .col-m-4 {width: 33.33%;}
-    .col-m-5 {width: 41.66%;}
-    .col-m-6 {width: 50%;}
-    .col-m-7 {width: 58.33%;}
-    .col-m-8 {width: 66.66%;}
-    .col-m-9 {width: 75%;}
-    .col-m-10 {width: 83.33%;}
-    .col-m-11 {width: 91.66%;}
-    .col-m-12 {width: 100%;}
-}
-@media only screen and (min-width: 1130px) {
-    /* For desktop: */
-    .col-1 {width: 8.33%;}
-    .col-2 {width: 16.66%;}
-    .col-3 {width: 25%;}
-    .col-4 {width: 33.33%;}
-    .col-5 {width: 41.66%;}
-    .col-6 {width: 50%;}
-    .col-7 {width: 58.33%;}
-    .col-8 {width: 66.66%;}
-    .col-9 {width: 75%;}
-    .col-10 {width: 83.33%;}
-    .col-11 {width: 91.66%;}
-    .col-12 {width: 100%;}
-}
-
-/******************NAV STYLES****************/
 nav {
 	position: fixed;
 	width: 100%;
@@ -103,7 +41,74 @@ nav li {
 	}
 }
 
-/********************ALL PAGE BODY STYLES*****************/
+footer {
+	display: block;
+	background-color: #668cff;
+	padding: 4px;
+	color: white;
+}
+
+p {
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size: 1.2em;
+}
+
+h1 {
+	font-family: 'Fjalla One', sans-serif;
+}
+
+
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* For mobile phones: */
+[class*="col-"] {
+	float: left;
+  width: 100%;
+}
+@media only screen and (min-width: 600px) {
+    /* For tablets: */
+    .col-m-1 {width: 8.33%;}
+    .col-m-2 {width: 16.66%;}
+    .col-m-3 {width: 25%;}
+    .col-m-4 {width: 33.33%;}
+    .col-m-5 {width: 41.66%;}
+    .col-m-6 {width: 50%;}
+    .col-m-7 {width: 58.33%;}
+    .col-m-8 {width: 66.66%;}
+    .col-m-9 {width: 75%;}
+    .col-m-10 {width: 83.33%;}
+    .col-m-11 {width: 91.66%;}
+    .col-m-12 {width: 100%;}
+}
+@media only screen and (min-width: 1130px) {
+    /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+}
+
+
+/********************PAGE BODY STYLES*****************/
 .page-body {
 	margin: 75px 160px;
 }
@@ -112,31 +117,6 @@ nav li {
 		margin: 30px;
 	}
 }
-
-.site-buttons {
-	background-color: #668cff;
-	width:127px;
-  height:38px;
-  margin: 20px 0px 20px;
-  cursor:pointer;
-}
-.site-buttons:hover {
-	background-color: green;
-}
-
-.site-buttons a{
-	text-decoration: none;
-	font-family: 'Fjalla One', sans-serif;
-	color: white;
-}
-
-footer {
-	display: block;
-	background-color: #668cff;
-	padding: 4px;
-	color: white;
-}
-
 
 
 /****TOP HEADER STYLES****/
@@ -243,6 +223,7 @@ footer {
 	}
 }
 
+
 #blp-header {
 	background-image: url("images/pencils1.jpg");
 	background-repeat: no-repeat;
@@ -263,10 +244,9 @@ footer {
 	}
 }
 
+
+
 /****ABOUT SECTION STYLES****/
-
-
-
 #about-head {
 	padding-right: 30px;
 }
@@ -306,9 +286,7 @@ footer {
 }
 
 
-/****PROJECT SECTION STYLES****/
-
-
+/****INDEX PROJECT SECTION STYLES****/
 #project-images img{
 	padding: 10px;
 	width: 100%;
@@ -337,14 +315,27 @@ footer {
 }
 
 
-
-
 /****************ALL PROJECT PAGE STYLES****************/
+.site-buttons {
+	background-color: #668cff;
+	width:127px;
+  height:38px;
+  margin: 20px 0px 20px;
+  cursor:pointer;
+}
+.site-buttons:hover {
+	background-color: green;
+}
+
+.site-buttons a{
+	text-decoration: none;
+	font-family: 'Fjalla One', sans-serif;
+	color: white;
+}
 
 #logo-image img  {
 	margin: 0 auto;
 }
-
 
 #main-page-img img {
 	width: 100%;
@@ -353,7 +344,6 @@ footer {
 	border-color: black;
 	border-width: 20px;
 }
-
 
 #main-side-info p {
 	margin: 0px 30px;
@@ -365,9 +355,7 @@ footer {
 }
 
 
-
 /******************CONTACT PAGE STYLES*********************/
-
 #contact-map {
 	padding-left: 60px;
 }
@@ -394,8 +382,8 @@ footer {
 
 /****FORM****/
 label {
-    display:block;
-    margin-top:20px;
+  display:block;
+  margin-top:20px;
 }
 
 input, textarea {
@@ -408,12 +396,12 @@ input, textarea {
 }
 
 #submit {
-    width:127px;
-    height:38px;
-    margin-top:20px;
-    cursor:pointer;
+  width:127px;
+  height:38px;
+  margin-top:20px;
+  cursor:pointer;
 }
 
-	#submit:hover {
-	    background-color: green;
-	}
+#submit:hover {
+  background-color: green;
+}

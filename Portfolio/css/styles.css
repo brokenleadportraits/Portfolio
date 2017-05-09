@@ -10,6 +10,7 @@ nav {
 	top: 0px;
 	background-color: #668cff;
 	padding: 4px;
+	z-index: 1;
 }
 
 nav a {
@@ -32,12 +33,12 @@ nav li {
 }
 
 .nav-name {
-	visibility: hidden;
 	float: right;
+	margin-right: 40px;
 }
 @media only screen and (max-width: 667px) {
 	.nav-name {
-		visibility: visible;
+		margin-right: 0px;
 	}
 }
 
@@ -53,7 +54,7 @@ p {
 	font-size: 1.2em;
 }
 
-h1 {
+h1, h2 {
 	font-family: 'Fjalla One', sans-serif;
 }
 
@@ -118,8 +119,43 @@ h1 {
 	}
 }
 
+.button-div {
+	margin: 80px 0px 80px 0px;
+}
+
+.clickme, .clickme2 {
+	background-color: #668cff;
+	text-align: center;
+	padding: 10px;
+	margin: 0 auto;
+	margin-bottom: 40px;
+	margin-top: 40px;
+	width: 350px;
+	height: 100px;
+	border-radius: 25px;
+	border: 2px solid #3333ff;
+	color: white;
+}
+.newButton {
+	background-color: #3333ff;
+	text-align: center;
+	padding: 10px;
+	margin: 0 auto;
+	margin-bottom: 40px;
+	margin-top: 40px;
+	width: 350px;
+	height: 100px;
+	border-radius: 25px;
+	border: 2px solid #668cff;
+}
+
 
 /****TOP HEADER STYLES****/
+
+#project-instructions {
+	text-align: center;
+	margin: 15px 0px 0px 0px;
+}
 
 #header{
 	background-image: url("images/index-background.jpg");
@@ -140,8 +176,7 @@ h1 {
 }
 
 
-#beergoblin-header {
-	background-image: url("images/beerlogo10.jpg");
+#beergoblin-header, #yoga-header, #wubbaduckies-header, #blp-header, #nypp-header {
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
@@ -155,51 +190,29 @@ h1 {
 	text-shadow: 4px 6px 0 black;
 }
 @media only screen and (max-width: 667px) {
-	#beergoblin-header {
+	#beergoblin-header, #yoga-header, #wubbaduckies-header, #blp-header, #nypp-header {
 		font-size: 1.5em;
 	}
 }
 
+#nypp-header {
+	background-image: url("images/nypp1.png");
+}
+
+#beergoblin-header {
+	background-image: url("images/beerlogo10.jpg");
+}
 
 #yoga-header {
 	background-image: url("images/gallery2.jpg");
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: cover;
-	width: 100%;
-	height: auto;
-	padding: 50px;
-	margin-top: 70px;
-	text-align: center;
-	font-size: 1.5em;
-	color: white;
-	text-shadow: 4px 6px 0 black;
 }
-@media only screen and (max-width: 667px) {
-	#yoga-header {
-		font-size: 1.5em;
-	}
-}
-
 
 #wubbaduckies-header {
 	background-image: url("images/rubber3.jpg");
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: cover;
-	width: 100%;
-	height: auto;
-	padding: 50px;
-	margin-top: 70px;
-	text-align: center;
-	font-size: 1.5em;
-	color: white;
-	text-shadow: 4px 6px 0 black;
 }
-@media only screen and (max-width: 667px) {
-	#wubbaduckies-header {
-		font-size: 1.5em;
-	}
+
+#blp-header {
+	background-image: url("images/pencils1.jpg");
 }
 
 
@@ -224,29 +237,10 @@ h1 {
 }
 
 
-#blp-header {
-	background-image: url("images/pencils1.jpg");
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: cover;
-	width: 100%;
-	height: auto;
-	padding: 50px;
-	margin-top: 70px;
-	text-align: center;
-	font-size: 1.5em;
-	color: white;
-	text-shadow: 4px 6px 0 black;
-}
-@media only screen and (max-width: 667px) {
-	#blp-header {
-		font-size: 1.5em;
-	}
-}
-
 
 
 /****ABOUT SECTION STYLES****/
+
 #about-head {
 	padding-right: 30px;
 }
@@ -286,42 +280,14 @@ h1 {
 }
 
 
-/****INDEX PROJECT SECTION STYLES****/
-#project-images img{
-	padding: 10px;
-	width: 100%;
-  height: auto;
-}
-
-#project-images img:hover {
-	opacity: .5;
-	transition: .3s ease-in-out;
-	-webkit-transition: .3s ease-in-out;
-}
-
-#project-images:hover .show-text {
-	visibility: visible;
-}
-
-.show-text {
-	visibility: hidden;
-	text-align: center;
-	margin: 8px;
-}
-@media only screen and (max-width: 667px) {
-	.show-text {
-		visibility: visible;
-	}
-}
-
 
 /****************ALL PROJECT PAGE STYLES****************/
 .site-buttons {
 	background-color: #668cff;
 	width:127px;
-  height:38px;
-  margin: 20px 0px 20px;
-  cursor:pointer;
+	height:38px;
+	margin: 20px 0px 20px;
+	cursor:pointer;
 }
 .site-buttons:hover {
 	background-color: green;
@@ -356,6 +322,11 @@ h1 {
 
 
 /******************CONTACT PAGE STYLES*********************/
+
+#contact-row {
+	margin-bottom: 120px;
+}
+
 #contact-map {
 	padding-left: 60px;
 }
@@ -368,40 +339,7 @@ h1 {
 #contact-map iframe {
 	width: 100%;
 	height: auto;
-  border-radius: 20%; 
+	border-radius: 20%; 
 }
 
-#contact-details {
-	padding-left: 60px;
-}
-@media only screen and (max-width: 1130px) {
-	#contact-details {
-		padding-left: 2px;
-	}
-}
 
-/****FORM****/
-label {
-  display:block;
-  margin-top:20px;
-}
-
-input, textarea {
-	width: 100%;
-	height: auto;
-	background:#efefef;
-	border:1px solid #dedede;
-	padding:10px;
-	margin-top:3px;
-}
-
-#submit {
-  width:127px;
-  height:38px;
-  margin-top:20px;
-  cursor:pointer;
-}
-
-#submit:hover {
-  background-color: green;
-}
